@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkMágico Chatbot IA v6.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1><i class="fas fa-magic"></i> LinkMágico Chatbot IA</h1>
+                <span class="version">v6.0 - Nova Geração</span>
+            </div>
+            <div class="status-indicator">
+                <span class="status-dot online"></span>
+                <span class="status-text">Online 24/7</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Control Panel -->
+            <div class="control-panel">
+                <h2><i class="fas fa-cog"></i> Painel de Controle</h2>
+                
+                <!-- URL Input Section -->
+                <div class="section">
+                    <h3><i class="fas fa-link"></i> Extração de Dados Web</h3>
+                    <div class="url-input-group">
+                        <input type="url" id="urlInput" placeholder="Cole a URL da página para análise..." class="url-input">
+                        <button id="extractBtn" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Extrair
+                        </button>
+                    </div>
+                    <div id="extractionStatus" class="status-message"></div>
+                </div>
+
+                <!-- Social Media Buttons -->
+                <div class="section">
+                    <h3><i class="fas fa-share-alt"></i> Redes Sociais</h3>
+                    <div class="social-buttons">
+                        <button class="btn btn-whatsapp" data-platform="whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </button>
+                        <button class="btn btn-telegram" data-platform="telegram">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </button>
+                        <button class="btn btn-facebook" data-platform="facebook">
+                            <i class="fab fa-facebook"></i> Facebook
+                        </button>
+                        <button class="btn btn-instagram" data-platform="instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </button>
+                        <button class="btn btn-linkedin" data-platform="linkedin">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </button>
+                        <button class="btn btn-youtube" data-platform="youtube">
+                            <i class="fab fa-youtube"></i> YouTube
+                        </button>
+                        <button class="btn btn-website" data-platform="website">
+                            <i class="fas fa-globe"></i> Site
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Analytics -->
+                <div class="section">
+                    <h3><i class="fas fa-chart-line"></i> Analytics</h3>
+                    <div class="analytics-grid">
+                        <div class="metric">
+                            <span class="metric-value" id="totalConversations">0</span>
+                            <span class="metric-label">Conversas</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value" id="recentConversations">0</span>
+                            <span class="metric-label">Hoje</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value" id="uniqueSessions">0</span>
+                            <span class="metric-label">Sessões</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Interface -->
+            <div class="chat-interface">
+                <div class="chat-header">
+                    <h2><i class="fas fa-comments"></i> Chat IA Vendedor</h2>
+                    <div class="chat-controls">
+                        <button id="clearChatBtn" class="btn btn-secondary">
+                            <i class="fas fa-trash"></i> Limpar
+                        </button>
+                        <button id="newSessionBtn" class="btn btn-primary">
+                            <i class="fas fa-plus"></i> Nova Sessão
+                        </button>
+                    </div>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>Olá! 👋 Sou seu assistente de vendas IA de nova geração! Diferente dos chatbots tradicionais, eu tenho inteligência emocional, entendo contexto e nunca dou respostas engessadas.</p>
+                            <p>Posso analisar qualquer página da web e ter conversas naturais sobre produtos, serviços ou qualquer assunto. Como posso te ajudar hoje? 🚀</p>
+                        </div>
+                        <div class="message-time">Agora</div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                        <div class="typing-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span>IA está digitando...</span>
+                    </div>
+                    
+                    <div class="chat-input-group">
+                        <input type="text" id="messageInput" placeholder="Digite sua mensagem..." class="chat-input">
+                        <button id="sendBtn" class="btn btn-send">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 LinkMágico Chatbot IA v6.0 - Desenvolvido com ❤️ para revolucionar vendas online</p>
+        </footer>
+    </div>
+
+    <!-- Modal for Social Media Configuration -->
+    <div id="socialModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Configurar Rede Social</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="webUrl">URL Web:</label>
+                    <input type="url" id="webUrl" placeholder="https://exemplo.com/perfil">
+                </div>
+                <div class="form-group">
+                    <label for="appUrl">URL do App (Deep Link):</label>
+                    <input type="text" id="appUrl" placeholder="app://perfil">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="detectMobile"> Detectar dispositivo móvel automaticamente
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="cancelBtn">Cancelar</button>
+                <button class="btn btn-primary" id="saveBtn">Salvar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

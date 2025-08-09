@@ -1,0 +1,57 @@
+nohup: ignoring input
+(node:5169) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[32minfo[39m: 🚀 LinkMágico Chatbot v6.0 rodando na porta 3000 {"timestamp":"2025-08-03T15:26:30.759Z"}
+[32minfo[39m: 🌐 Acesse: http://localhost:3000 {"timestamp":"2025-08-03T15:26:30.762Z"}
+[32minfo[39m: ✨ Nova geração de IA conversacional ativada! {"timestamp":"2025-08-03T15:26:30.762Z"}
+[32minfo[39m: Extração solicitada para: https://example.com {"timestamp":"2025-08-03T15:27:11.356Z"}
+[32minfo[39m: Iniciando extração UNIVERSAL para: https://example.com {"timestamp":"2025-08-03T15:27:11.357Z"}
+[32minfo[39m: Usando método: axios {"timestamp":"2025-08-03T15:27:11.357Z"}
+[33mwarn[39m: Axios extraction failed for https://example.com: {"timestamp":"2025-08-03T15:27:16.408Z"}
+[32minfo[39m: Tentando fallback com: cloudscraper {"timestamp":"2025-08-03T15:27:16.409Z"}
+[33mwarn[39m: Cloudscraper extraction failed for https://example.com: {"timestamp":"2025-08-03T15:27:21.675Z"}
+[32minfo[39m: Tentando fallback com: puppeteer {"timestamp":"2025-08-03T15:27:21.676Z"}
+[33mwarn[39m: Puppeteer extraction failed for https://example.com: {"timestamp":"2025-08-03T15:27:52.826Z"}
+[32minfo[39m: Tentando fallback com: playwright {"timestamp":"2025-08-03T15:27:52.942Z"}
+[33mwarn[39m: Playwright extraction failed for https://example.com: {"timestamp":"2025-08-03T15:27:52.953Z"}
+[31merror[39m: Erro na extração universal: Todos os métodos de extração falharam {"stack":"Error: Todos os métodos de extração falharam\n    at UniversalWebExtractor.extractData (/home/ubuntu/linkmagico_chatbot_v6_nodejs/server_v6.js:329:15)\n    at async /home/ubuntu/linkmagico_chatbot_v6_nodejs/server_v6.js:863:27","timestamp":"2025-08-03T15:27:52.954Z"}
+[32minfo[39m: Iniciando extração UNIVERSAL para: https://example.com {"timestamp":"2025-08-03T15:27:53.970Z"}
+[32minfo[39m: Usando método: axios {"timestamp":"2025-08-03T15:27:53.970Z"}
+[33mwarn[39m: Axios extraction failed for https://example.com: {"timestamp":"2025-08-03T15:27:58.976Z"}
+[32minfo[39m: Tentando fallback com: cloudscraper {"timestamp":"2025-08-03T15:27:58.977Z"}
+[33mwarn[39m: Cloudscraper extraction failed for https://example.com: {"timestamp":"2025-08-03T15:28:03.984Z"}
+[32minfo[39m: Tentando fallback com: puppeteer {"timestamp":"2025-08-03T15:28:03.984Z"}
+[32minfo[39m: Iniciando extração UNIVERSAL para: https://example.com {"timestamp":"2025-08-03T15:28:09.135Z"}
+[32minfo[39m: Usando método: axios {"timestamp":"2025-08-03T15:28:09.136Z"}
+[33mwarn[39m: Axios extraction failed for https://example.com: {"timestamp":"2025-08-03T15:28:14.143Z"}
+[32minfo[39m: Tentando fallback com: cloudscraper {"timestamp":"2025-08-03T15:28:14.143Z"}
+[33mwarn[39m: Cloudscraper extraction failed for https://example.com: {"timestamp":"2025-08-03T15:28:19.151Z"}
+[32minfo[39m: Tentando fallback com: puppeteer {"timestamp":"2025-08-03T15:28:19.151Z"}
+[33mwarn[39m: Puppeteer extraction failed for https://example.com: {"timestamp":"2025-08-03T15:28:34.361Z"}
+[32minfo[39m: Tentando fallback com: playwright {"timestamp":"2025-08-03T15:28:34.459Z"}
+[33mwarn[39m: Playwright extraction failed for https://example.com: {"timestamp":"2025-08-03T15:28:34.464Z"}
+[31merror[39m: Erro na extração universal: Todos os métodos de extração falharam {"stack":"Error: Todos os métodos de extração falharam\n    at UniversalWebExtractor.extractData (/home/ubuntu/linkmagico_chatbot_v6_nodejs/server_v6.js:329:15)\n    at async /home/ubuntu/linkmagico_chatbot_v6_nodejs/server_v6.js:896:18","timestamp":"2025-08-03T15:28:34.464Z"}
+[33mwarn[39m: Puppeteer extraction failed for https://example.com: {"timestamp":"2025-08-03T15:28:49.494Z"}
+[32minfo[39m: Tentando fallback com: playwright {"timestamp":"2025-08-03T15:28:49.601Z"}
+[33mwarn[39m: Playwright extraction failed for https://example.com: {"timestamp":"2025-08-03T15:28:49.603Z"}
+[31merror[39m: Erro na extração universal: Todos os métodos de extração falharam {"stack":"Error: Todos os métodos de extração falharam\n    at UniversalWebExtractor.extractData (/home/ubuntu/linkmagico_chatbot_v6_nodejs/server_v6.js:329:15)\n    at async /home/ubuntu/linkmagico_chatbot_v6_nodejs/server_v6.js:1022:18","timestamp":"2025-08-03T15:28:49.603Z"}
+[32minfo[39m: Iniciando extração UNIVERSAL para: https://example.com {"timestamp":"2025-08-03T15:29:07.398Z"}
+[32minfo[39m: Usando método: axios {"timestamp":"2025-08-03T15:29:07.399Z"}
+[33mwarn[39m: Axios extraction failed for https://example.com: {"timestamp":"2025-08-03T15:29:12.406Z"}
+[32minfo[39m: Tentando fallback com: cloudscraper {"timestamp":"2025-08-03T15:29:12.406Z"}
+[33mwarn[39m: Cloudscraper extraction failed for https://example.com: {"timestamp":"2025-08-03T15:29:17.414Z"}
+[32minfo[39m: Tentando fallback com: puppeteer {"timestamp":"2025-08-03T15:29:17.414Z"}
+[32minfo[39m: Iniciando extração UNIVERSAL para: https://example.com {"timestamp":"2025-08-03T15:29:40.761Z"}
+[32minfo[39m: Usando método: axios {"timestamp":"2025-08-03T15:29:40.761Z"}
+[33mwarn[39m: Axios extraction failed for https://example.com: {"timestamp":"2025-08-03T15:29:45.769Z"}
+[32minfo[39m: Tentando fallback com: cloudscraper {"timestamp":"2025-08-03T15:29:45.769Z"}
+[33mwarn[39m: Puppeteer extraction failed for https://example.com: {"timestamp":"2025-08-03T15:29:47.776Z"}
+[32minfo[39m: Tentando fallback com: playwright {"timestamp":"2025-08-03T15:29:47.865Z"}
+[33mwarn[39m: Playwright extraction failed for https://example.com: {"timestamp":"2025-08-03T15:29:47.867Z"}
+[31merror[39m: Erro na extração universal: Todos os métodos de extração falharam {"stack":"Error: Todos os métodos de extração falharam\n    at UniversalWebExtractor.extractData (/home/ubuntu/linkmagico_chatbot_v6_nodejs/server_v6.js:329:15)\n    at async /home/ubuntu/linkmagico_chatbot_v6_nodejs/server_v6.js:896:18","timestamp":"2025-08-03T15:29:47.867Z"}
+[33mwarn[39m: Cloudscraper extraction failed for https://example.com: {"timestamp":"2025-08-03T15:29:50.776Z"}
+[32minfo[39m: Tentando fallback com: puppeteer {"timestamp":"2025-08-03T15:29:50.776Z"}
+[33mwarn[39m: Puppeteer extraction failed for https://example.com: {"timestamp":"2025-08-03T15:30:21.116Z"}
+[32minfo[39m: Tentando fallback com: playwright {"timestamp":"2025-08-03T15:30:21.203Z"}
+[33mwarn[39m: Playwright extraction failed for https://example.com: {"timestamp":"2025-08-03T15:30:21.205Z"}
+[31merror[39m: Erro na extração universal: Todos os métodos de extração falharam {"stack":"Error: Todos os métodos de extração falharam\n    at UniversalWebExtractor.extractData (/home/ubuntu/linkmagico_chatbot_v6_nodejs/server_v6.js:329:15)\n    at async /home/ubuntu/linkmagico_chatbot_v6_nodejs/server_v6.js:896:18","timestamp":"2025-08-03T15:30:21.206Z"}
